@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --bg-body: #e5e5e5;
+  --bg-card: #ccccd4;
+  --bg-card-select: #02799d;
+  --bg-slider-volume: #323238;
+  --bg--button-volume: #323238;
+
+  --bg-slider-select: #ffffff;
+  --bg-button-select: #ffffff;
+
+  --timer-color: #323238;
+
+  --svg-color: #323238;
+  --svg-color-select: #ffffff;
+}
+
+.dark {
+  --bg-body: #121214;
+  --bg-card: #29292e;
+  --bg-card-select: #0a3442;
+  --bg-slider-volume: #ffffff;
+  --bg--button-volume: #ffffff;
+
+  --timer-color: #ffffff;
+
+  --svg-color: #c4c4cc38;
+}
+
+body {
+  transition: background 0.3s ease-out;
+  font-family: "Roboto", sans-serif;
+  background: var(--bg-body);
+  display: grid;
+  height: 100vh;
+}
+
+body img {
+  align-self: flex-start;
+  justify-self: end;
+  margin: 6rem 6rem 0 0;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+main {
+  display: flex;
+  align-self: baseline;
+  gap: 19.2rem;
+  max-height: 33.6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  gap: 4.8rem;
+}
+
+.timer {
+  color: var(--timer-color);
+  display: flex;
+  font-size: 12.6rem;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  text-align: center;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container-cards {
+  display: grid;
+  gap: 3.2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+  text-align: center;
+  width: 13.8rem;
+  height: 15.2rem;
+  background: var(--bg-card);
+  border-radius: 2.4rem;
+  cursor: pointer;
+  display: grid;
+  justify-items: center;
+}
+
+svg,
+path {
+  margin-top: 2.4rem;
+  fill: var(--svg-color);
+}
+
+.card.select,
+.select path {
+  background: var(--bg-card-select);
+  fill: var(--svg-color-select);
+}
+
+input[type="range"] {
+  appearance: none;
+  background: var(--bg-slider-volume);
+  border-radius: 5px;
+  height: 4px;
+  outline: none;
+  width: 9rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: var(--bg--button-volume);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.card.select input[type="range"] {
+  background: var(--bg-button-select);
+}
+
+.card.select input[type="range"]::-webkit-slider-thumb {
+  background: var(--bg-slider-select);
+}
