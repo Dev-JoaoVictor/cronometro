@@ -1,26 +1,35 @@
-<h1 align="center" >Pomodoro 2.0</h1>
+# Cronometro
 
-<h3 align="center">Mantenha o foco para alcançar seus objetivos</h3>
-<br>
+Este projeto é um cronometro desenvolvido com base no estudo na técnica de estudos do pomodoro. Essa técnica, baseada em períodos curtos e intensos de trabalho, com pequenos intervalos de descanso, pode maximizar a eficiência e a concentração durante as atividades, e acredito que seja extremamente útil para otimizar a rotina de estudos ou trabalho. Nele você poder inserir o tempo que deseja e também tem a opção de escolher um tipo de som para deixar o ambiente mais tranquilo para seus estudos
 
-## Demonstração
+### 📋 Pré-requisitos
 
-<p>
-    <img width="500" src="./assets/demonstracao.gif"></img>
-</p>
+- Sem pré-requisitos  
 
-## Deploy
+### 🔧 Instalação
 
-**Link para testes:** <a target="_blank" href="https://dev-joaovictor.github.io/pomodoro2.0/">https://dev-joaovictor.github.io/pomodoro2.0/</a>
+1. Clone este repositório
 
-## Stack utilizada
+```
+git clone https://github.com/Dev-JoaoVictor/cronometro.git
+```
 
-**Front-end:** HTML, CSS e JavaScript.
+2. Após o clone do projeto, abra um novo terminal e navegue até a pasta `cronometro` e digite o seguinte código para abrir o projeto no seu visual studio code.
 
-## Aprendizados
+```
+code .
+```
 
-Este projeto foi desenvolvido como parte do Stage05 do explorer da Rocketseat, sendo um dos maiores desafios que eu já enfrentei até o momento. A versão 2.0 do Pomodoro foi desenvolvida totalmente sozinho, com a busca de dicas e referências sobre o que e como deveria ser implementado no código.
+3. Para que rode em seu navegador recomendo utilizar a extensão `Live Server`. Ao finalizar a instalação clique com o botão direito do mouse no arquivo `index.html` e selecione a primeira opção `Open with Live Server`.
 
-Durante o processo, encontrei dificuldades na modularização do código ao utilizar importações e exportações que vieram com o ECS2016, o que acabou demorando mais tempo do que o previsto.
 
-No entanto, com paciência e muita dedicação, consegui superar os obstáculos e desenvolver uma aplicação de que me orgulho muito. Este projeto representa meu crescimento e evolução como desenvolvedor.
+## 🛠️ Construído com
+
+- [HTML](https://html.com/)
+- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS/)
+- [Javascritp](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT - veja o arquivo [LICENSE](https://github.com/Dev-JoaoVictor/cronometro/blob/main/LICENSE.txt) para detalhes.
+
